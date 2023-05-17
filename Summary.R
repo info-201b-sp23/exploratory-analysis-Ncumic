@@ -8,11 +8,6 @@ earthquake_data <- select(earthquake_data, -c("title","alert","net", "nst", "dmi
 
 
 
-# BONIE VIZ STUFF
-
-
-
-# CHRISTINE VIZ STUFF
 
 
 
