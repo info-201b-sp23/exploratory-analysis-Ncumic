@@ -4,10 +4,7 @@
 # UPDATED TABLE CODE
 
 
-
-
-# NIKOLA VIZ STUFF
-
+earthquake_data <- read.csv('https://raw.githubusercontent.com/info-201b-sp23/exploratory-analysis-Ncumic/main/earthquake_data.csv')
 
 
 # BONIE VIZ STUFF
