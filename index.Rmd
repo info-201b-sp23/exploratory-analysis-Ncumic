@@ -26,7 +26,17 @@ Our main question is to determine the continent with the highest number of earth
 
 ### Introduction - NIKOLA
 
-Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+#### Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
+
+A lot of data revolving around earthquakes is confined to datasets and not very accessible to people unfamiliar to data traversal. Our objective is to better visualize this data for people that wish to stay informed, but can’t take the time to sift through data about earthquakes. This also helps people understand the actual frequencies and magnitude of earthquakes, and why earthquakes are not something to be as feared as they are depicted in movies and on the news. This data also has a unique column that goes over what citizens of a certain area felt like the magnitude of the earthquake was, this information if taken into account could also lower peoples worries of earthquakes and keep them more informed on earthquake impacts. Another good thing for people to understand about earthquakes are other variables that happen alongside the event and how they effect the surrounding environment, since many people don’t understand the aftermath/effects earthquakes bring(that is why we are also focusing on how many of these earthquakes cause tsunamis, or damage building around them). We intend to put a more clear understanding of these natural phenomena in order to better reassure people and to inform.
+
+#### Research Questions
+
+1) Continent with most earthquakes?
+2) What year had the most earthquakes?
+3) Number of earthquakes over the years(trend)
+4) Country with the most intense magnitudes of earthquakes
+5) Which Country had the most accurate estimated of intensities?
 
 ### Related Work  
 
@@ -34,14 +44,40 @@ Describe your topic and related work in this space. You must include 3 citations
 
 ### The Dataset - NIKOLA
 
-Where did you find the data? Please include a link to the data source  
-Who collected the data?  
-How was the data collected or generated?  
-Why was the data collected?  
-How many observations (rows) are in your data?  
-How many features (columns) are in the data?  
-What, if any, ethical questions or questions of power do you need to consider when working with this data?  
-What are possible limitations or problems with this data?   (at least 200 words)
+> Where did you find the data? Please include a link to the data source
+
+https://www.kaggle.com/datasets/warcoder/earthquake-dataset
+
+> Who collected the data?
+
+Chirag Chauhan
+
+> How was the data collected or generated?
+
+The data was collected through seismic sensors near/at the locations of earthquakes from all around the world. The data is a massive collaboration between seismic stations around the world by having their data gathered and shared in one location.
+
+> Why was the data collected?
+
+For scientists to see trends in earthquakes and fault lines
+
+>How many observations (rows) are in your data?
+
+782 rows
+
+> How many features (columns) are in the data?
+
+19 columns
+
+> What, if any, ethical questions or questions of power do you need to consider when working with this data?
+
+Data privacy - It includes information about the location and/or damage to the area by the earthquake. We should consider the affected individuals before using the data.
+
+> What are possible limitations or problems with this data?   (at least 200 words)
+
+The earthquake dataset from Kaggle has the following problems and limitations such as limited coverage, incomplete data, and potential data quality issue. The dataset only includes earthquake data from Japan. This implies the data can not represent the earthquakes that happen in other regions. Second, the dataset doesn’t include all the earthquakes that has happened in Japan. It only includes the earthquakes that happened from 2000 to 2016. Furthermore, this dataset is collected from multiple sources, which may be collected through different methods and standards. Thus, the data may lead to inconsistencies and issues. In addition, the dataset is also lack of some contextual information. This contextual information covers details such as geological and environmental reason that cause the earthquake to happen. This information is important because it gives people a better understanding of factors that contribute to earthquakes. Other than this, the dataset also didn’t include how the people respond to the earthquake and the recovery effort they paid.
+
+One another main limitation is that the accuracy of earthquake data can be affected by the changes of monitoring technology and techniques over time. As the newest methods for detecting and measuring earthquakes are developed, the historical data may become less accurate and reliable compared to the more recent data.
+
 
 ### Implications - Brian
 The findings of this analysis can have significant implications for technologists, designers, and policymakers working in the field of disaster management, infrastructure development, and risk assessment.
