@@ -21,3 +21,5 @@ CountryAccuracy <- earthquake_data_Accuracy %>%
   arrange(desc(avg_accuracy))
 
 CountryMostAccurate <- CountryAccuracy %>% head(1) %>% pull(country)
+
+write.csv(CountryAccuracy, file = 'CountryAccuracy.csv')
