@@ -9,15 +9,15 @@ Give your project a concise, interesting title that summarizes the entirety of y
 
 ### Authors
 
-Names of your team members
+Names of your team members: Brian Chiang
 
 ### Date
 
 Winter 2022
 
-### Abstract
+### Abstract - Brian
 
-No more than three sentences that summarize your project. Focus on the very most important aspects. For example: (1) "Our main question is .... This question is important because .... To address the question, we will ...." (2) "We are concerned with ..., because .... To address this concern, we plan to ...." (3) "Consider that .... This is important because .... Accordingly, we plan to ...."
+Our main question is to determine the continent with the highest number of earthquakes, the year with the most earthquakes, and the country with the most intense magnitudes. This question is important because understanding these patterns is crucial for disaster preparedness and risk assessment. To address the question, we will analyze an earthquake dataset, filtering and grouping the data by continent, year, and country, respectively.
 
 ### Keywords
 
@@ -43,9 +43,14 @@ How many features (columns) are in the data?
 What, if any, ethical questions or questions of power do you need to consider when working with this data?  
 What are possible limitations or problems with this data?   (at least 200 words)
 
-### Implications
+### Implications - Brian
+The findings of this analysis can have significant implications for technologists, designers, and policymakers working in the field of disaster management, infrastructure development, and risk assessment.
 
-Assuming you answer your research questions, briefly describe the expected or possible implications for technologists, designers, and policymakers. (at least 150 words)
+For technologists, understanding the continent, year, and country with the highest earthquake occurrences and magnitudes can guide the design and development of robust and resilient infrastructure. This knowledge can inform the implementation of advanced technologies such as early warning systems, structural engineering innovations, and geospatial mapping tools to enhance earthquake preparedness and response.
+
+Designers can leverage the insights gained from this analysis to develop earthquake-resistant architectural designs and urban planning strategies. By considering the specific regions with high earthquake activity, designers can integrate seismic safety measures into buildings, bridges, and critical infrastructure to minimize the impact of earthquakes on human lives and property.
+
+Policymakers can utilize the information about earthquake patterns and intensities to formulate effective disaster management strategies, allocate resources, and prioritize investments in vulnerable regions. This analysis can guide policymakers in implementing regulations and building codes that enforce seismic resilience standards, ensuring that infrastructure projects adhere to seismic safety guidelines.
 
 ### Limitations & Challenges
 What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
