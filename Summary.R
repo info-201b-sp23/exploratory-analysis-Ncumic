@@ -24,8 +24,8 @@ CountryMostAccurate <- CountryAccuracy %>% head(1) %>% pull(country)
 
 write.csv(CountryAccuracy, file = 'CountryAccuracy.csv')
 
-##Brian Chiang
-##SUMMARY VALUES TO CALCULATE: 
+##BrianChiang
+##SUMMARY VALUES TO CALCULATE:
 ##1) Continent with most earthquakes? 
 ##2) What year had the most earthquakes?
 ##3) Number of earthquakes over the years(trend)
