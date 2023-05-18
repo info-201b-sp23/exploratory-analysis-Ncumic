@@ -16,9 +16,8 @@ world_plot <- ggplot(data = world_data_shape) +
                    group = group)) +
   geom_point(data = earthquake_data_modified,
              aes(x = longitude, y = latitude,
-             size = magnitude),
-             #will make color match to magnitude size somehow
-             color = "Red",
+             size = magnitude, color = magnitude),
+             #will make color match to magnitude size/alert level maybe? somehow
              # might change shape later
              shape = 21
   )
