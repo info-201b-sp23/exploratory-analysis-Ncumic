@@ -23,9 +23,16 @@ continent_counts
 #this line right here doesn't work and stops everything else, it might still checking
 # earthquake_data_modified$year <- as.integer(format(earthquake_data_modified$date, "%Y"))
 
-year_counts <- table(earthquake_data_modified$year)
+earthquake_data_modified$Year <- as.integer(format(as.Date(earthquake_data_modified$date), "%Y"))
 
-most_earthquakes_year <- as.integer(names(year_counts)[which.max(year_counts)])
+earthquakes_by_year <- earthquake_data_modified %>%
+  group_by(Year) %>%
+  summarise(Count = n()) %>%
+  arrange(Count)
+  
+most_earthquakes_year <- earthquakes_by_year %>%
+  filter(Count == max(Count)) %>%
+  pull(Year)
 
 ##3) Number of earthquakes over the years(trend)
 
