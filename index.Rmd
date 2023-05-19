@@ -115,8 +115,9 @@ The summary information encompasses five important facets of earthquake analysis
 ### Table
 
 Include a table of aggregate information
+```{r echo=FALSE, message=FALSE, code= readLines("Table.R")}
+```
 
-Describe why you included the table and what information it reveals
 
 ### Chart 1
 

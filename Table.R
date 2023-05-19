@@ -15,8 +15,13 @@ earthquake_data_modified <- earthquake_data_modified %>%
                                    'estimated intensity' = 'mmi',
                                    'significance' = 'sig')
 
+<<<<<<< HEAD
 earthquake_data_modified <- earthquake_data_modified[earthquake_data_modified$country != "" & earthquake_data_modified$continent != "" & earthquake_data_modified$alert != "" & 
                                                        earthquake_data_modified$location != "", , drop = FALSE]
+=======
+earthquake_data_modified <- earthquake_data_modified[earthquake_data_modified$country != "" & earthquake_data_modified$continent != "" & earthquake_data_modified$alert != "", , drop = FALSE]
+# Create the summary table
+>>>>>>> 3fcda005b752e483e205eb2a804ced982cfb4caf
 
 
 
