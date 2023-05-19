@@ -107,7 +107,6 @@ Describe why you included the table and what information it reveals
 This chart was chosen as a means to let people truly see where earthquakes of measurable scale occur.
 
 ```{r, echo = FALSE, code = readLines("Nikola_Viz.R")}
-Earthquake_plot
 ```
 
 ### Chart 2
