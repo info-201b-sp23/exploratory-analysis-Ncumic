@@ -141,5 +141,7 @@ A bar chart was used to illustrate the top eight countries with the highest accu
 
 > Describe why you chose this chart and what information it reveals
 
+The reason this chart was chosen to depict the # of earthquakes that cause tsunami's was due to how the visual created a way for people to better understand not only how many earthquakes cause water related events, but also to understand where those sort of natural disaster truly happen(someone living in America should be less worried about earthquake related water disasters happening then someone in the Philippines).
+
 ```{r, echo = FALSE, code = readLines("Christine-chart.R")}
 ```
