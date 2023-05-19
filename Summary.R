@@ -19,9 +19,7 @@ continent_counts <- earthquake_data_modified %>%
 continent_counts
 
 ##2) What year had the most earthquakes?
-
 earthquake_data_modified$Year <- as.integer(format(as.POSIXct(earthquake_data_modified$date, format = "%d-%m-%Y %H:%M"), "%Y"))
-
 
 earthquakes_by_year <- earthquake_data_modified %>%
   group_by(Year) %>%
@@ -44,6 +42,8 @@ ggplot(data = trend_data, aes(x = Year, y = earthquakes)) +
   geom_line() +
   geom_point() +
   labs(x = "Year", y = "Number of Earthquakes", title = "Trend of Earthquakes over the Years")
+
+View(trend_data)
 
 ##4) Country with the most intense magnitudes of earthquakes
 
