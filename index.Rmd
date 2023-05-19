@@ -104,7 +104,7 @@ Describe why you included the table and what information it reveals
 
 > Describe why you chose this chart and what information it reveals
 
-This chart was chosen as a means to let people truly see where earthquakes of measurable scale occur. This not only inform people about areas that see more heavy earthquake activity, but also help people realize how many earthquakes happen and how many go unnoticed. It's a way to put some people at ease, while informing others that not all earthquakes are those intense ones seen in movies. The reason for choosing this form for the chart is because it provides a great visual understanding of earthquake locations and thier intensities in a certain area.
+This chart was chosen as a means to let people truly see where earthquakes of measurable scale occur. This not only inform people about areas that see more heavy earthquake activity, but also help people realize how many earthquakes happen and how many go unnoticed. It's a way to put some people at ease, while informing others that not all earthquakes are those intense ones seen in movies. The reason for choosing this form for the chart is because it provides a great visual understanding of earthquake locations and their intensities in a certain area.
 
 ```{r echo=FALSE, message=FALSE, code= readLines("Nikola_Viz.R")}
 ```
