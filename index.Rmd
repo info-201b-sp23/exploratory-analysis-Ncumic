@@ -8,7 +8,7 @@ output: html_document
 
 ### Authors
 
-Names of your team members: Brian Chiang, Nikola Cumic, Bonie Wang
+Names of your team members: Brian Chiang, Nikola Cumic, Bonie Wang, Christine
 
 ### Date
 
@@ -112,9 +112,9 @@ The summary information encompasses five important facets of earthquake analysis
 
 ### Table
 
+The reason we included this table was to give a clearer understanding to the people reading this on the information we used. We grouped by magnitude because it was a value in the data set that was always available and one understood by many people.
 ```{r echo=FALSE, message=FALSE, code=readLines("Table.R"), paged.print=TRUE}
 ```
-The reason we included this table was to give a clearer understanding to the people reading this on the information we used. We grouped by magnitude because it was a value in the data set that was always available and one understood by many people.
 
 ### Chart 1
 
