@@ -36,14 +36,15 @@ most_earthquakes_year <- earthquakes_by_year %>%
 
 ##3) Number of earthquakes over the years(trend)
 
-trend_data <- data.frame(year = as.integer(names(year_counts)),
-                         earthquakes = as.numeric(year_counts))
+trend_data <- earthquake_data_modified %>%
+  mutate(Year = as.integer(format(as.Date(date), "%Y"))) %>%
+  group_by(Year) %>%
+  summarise(earthquakes = n())
 
-ggplot(data = trend_data, aes(x = year, y = earthquakes)) +
+ggplot(data = trend_data, aes(x = Year, y = earthquakes)) +
   geom_line() +
   geom_point() +
   labs(x = "Year", y = "Number of Earthquakes", title = "Trend of Earthquakes over the Years")
-
 
 ##4) Country with the most intense magnitudes of earthquakes
 
