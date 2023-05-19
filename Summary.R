@@ -37,6 +37,7 @@ ggplot(data = trend_data, aes(x = year, y = earthquakes)) +
   geom_point() +
   labs(x = "Year", y = "Number of Earthquakes", title = "Trend of Earthquakes over the Years")
 
+
 ##4) Country with the most intense magnitudes of earthquakes
 
 country_max_magnitude <- earthquake_data_modified %>%
