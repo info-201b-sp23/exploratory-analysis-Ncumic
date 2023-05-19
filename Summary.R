@@ -8,12 +8,11 @@ library("ggplot2")
 # UPDATED TABLE CODE
 
 earthquake_data <- read.csv('https://raw.githubusercontent.com/info-201b-sp23/exploratory-analysis-Ncumic/main/earthquake_data.csv')
-
 earthquake_data_modified <- select(earthquake_data, -c("title","net", "nst", "dmin", "gap", "magType", "depth"))
 
 ##BrianChiang
 ##SUMMARY VALUES TO CALCULATE:
-##1) Continent with most earthquakes? 
+##1) Which Continent with most earthquakes?
 continent_counts <- earthquake_data_modified %>%
   count(continent)
 
