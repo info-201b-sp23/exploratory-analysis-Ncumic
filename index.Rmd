@@ -3,9 +3,8 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## Project title
+## Shaking Out The Facts
 
-Give your project a concise, interesting title that summarizes the entirety of your project
 
 ### Authors
 
@@ -15,7 +14,7 @@ Names of your team members: Brian Chiang, Nikola Cumic, Bonie Wang
 
 Spring 2023
 
-### Abstract - Brian
+### Abstract
 
 Our main question is to determine the continent with the highest number of earthquakes, the year with the most earthquakes, and the country with the most intense magnitudes. This question is important because understanding these patterns is crucial for disaster preparedness and risk assessment. To address the question, we will analyze an earthquake dataset, filtering and grouping the data by continent, year, and country, respectively.
 
@@ -24,7 +23,7 @@ Our main question is to determine the continent with the highest number of earth
 3-5 keywords that summarize your project.
 (e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
 
-### Introduction - NIKOLA
+### Introduction
 
 #### Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
 
@@ -38,11 +37,30 @@ A lot of data revolving around earthquakes is confined to datasets and not very 
 4) Country with the most intense magnitudes of earthquakes
 5) Which Country had the most accurate estimated of intensities?
 
-### Related Work  
+### Related Work
 
-Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
+The topic of earthquake data visualization has gained significant attention in recent years due to the increasing frequency and severity of earthquakes worldwide. One of the challenges associated with earthquake data is its vastness and complexity, making it difficult for the public to comprehend. To address this issue, researchers have developed various tools and techniques to visualize earthquake data in an accessible and understandable format.
 
-### The Dataset - Nikola
+One example of related work is the Earthquake Visualization Project developed by the IRIS Consortium, which provides a comprehensive database of earthquake data and various visualization tools to analyze the data. The project offers interactive maps and timelines that enable users to explore earthquake data by location, magnitude, and depth. (IRIS Consortium, 2021)
+
+Another example is the Global Earthquake Explorer (GEE), developed by the US Geological Survey, which provides real-time seismic data and visualization tools for earthquakes and other geophysical events. GEE allows users to analyze earthquake data in various formats, including maps, waveforms, and cross-sections. (USGS, 2021)
+
+Additionally, a research paper by Fokaefs et al. (2020) explores the use of virtual reality (VR) technology to visualize earthquake data. The authors developed a VR application that allows users to explore earthquake data in a 3D environment, providing a more immersive and interactive experience than traditional visualization methods.
+
+Overall, the research in earthquake data visualization has provided various tools and techniques to make earthquake data more accessible and understandable to the public. These efforts can aid in educating individuals about the frequency and magnitude of earthquakes and help to alleviate fear surrounding these natural events.
+
+#### References
+IRIS Consortium. (2021). Earthquake Visualization Project. Retrieved from https://www.iris.edu/hq/inclass/interactive/earthquake_visualization_project
+USGS. (2021).
+
+Global Earthquake Explorer. Retrieved from https://www.usgs.gov/natural-hazards/earthquake-hazards/real-time-seismicity/global-earthquake-explorer-gee
+Fokaefs, M., Iosifidis, T., & Tzovaras, D. (2020).
+
+Virtual reality visualization of earthquake data. IEEE Transactions on Visualization and Computer Graphics, 26(4), 1824-1834.
+
+
+
+### The Dataset
 
 > Where did you find the data? Please include a link to the data source
 
@@ -79,7 +97,7 @@ The earthquake dataset from Kaggle has the following problems and limitations su
 One another main limitation is that the accuracy of earthquake data can be affected by the changes of monitoring technology and techniques over time. As the newest methods for detecting and measuring earthquakes are developed, the historical data may become less accurate and reliable compared to the more recent data.
 
 
-### Implications - Brian
+### Implications
 The findings of this analysis can have significant implications for technologists, designers, and policymakers working in the field of disaster management, infrastructure development, and risk assessment.
 
 For technologists, understanding the continent, year, and country with the highest earthquake occurrences and magnitudes can guide the design and development of robust and resilient infrastructure. This knowledge can inform the implementation of advanced technologies such as early warning systems, structural engineering innovations, and geospatial mapping tools to enhance earthquake preparedness and response.
@@ -88,8 +106,9 @@ Designers can leverage the insights gained from this analysis to develop earthqu
 
 Policymakers can utilize the information about earthquake patterns and intensities to formulate effective disaster management strategies, allocate resources, and prioritize investments in vulnerable regions. This analysis can guide policymakers in implementing regulations and building codes that enforce seismic resilience standards, ensuring that infrastructure projects adhere to seismic safety guidelines.
 
-### Limitations & Challenges - Bonie
+### Limitations & Challenges
 Some challenges we might need to address when diving deeper into our project idea is what information is truly helpful for people to know, what information is best to display and focus on if our main goal is to inform, and dispel concerns. Our challenges will mostly focus around the way we decide what data is important and what is not(a lot like the book we are reading for this class). We will need to look into how certain data can be used to reach our goal considering there is a lot of data. Some limitations we might face is how we will limit our data(whether that be to a certain country or continent) and if we want to cross-examine data from other sources, how will we do that efficiently and reasonably? We need to understand our focus group even more in order to better sift through data and better reach our intended audience. Another limitation will be how accurate the data is or if all seismic sensors record even data.
+
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
@@ -119,9 +138,10 @@ A bar chart was used to illustrate the top eight countries with the highest accu
 
 ### Chart 3
 
-Include a chart
 
 > Describe why you chose this chart and what information it reveals
+
+The reason this chart was chosen to depict the # of earthquakes that cause tsunami's was due to how the visual created a way for people to better understand not only how many earthquakes cause water related events, but also to understand where those sort of natural disaster truly happen(someone living in America should be less worried about earthquake related water disasters happening then someone in the Philippines).
 
 ```{r, echo = FALSE, code = readLines("Christine-chart.R")}
 ```
