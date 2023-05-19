@@ -88,8 +88,9 @@ Designers can leverage the insights gained from this analysis to develop earthqu
 
 Policymakers can utilize the information about earthquake patterns and intensities to formulate effective disaster management strategies, allocate resources, and prioritize investments in vulnerable regions. This analysis can guide policymakers in implementing regulations and building codes that enforce seismic resilience standards, ensuring that infrastructure projects adhere to seismic safety guidelines.
 
-### Limitations & Challenges - Bonie
-Some challenges we might need to address when diving deeper into our project idea is what information is truly helpful for people to know, what information is best to display and focus on if our main goal is to inform, and dispel concerns. Our challenges will mostly focus around the way we decide what data is important and what is not(a lot like the book we are reading for this class). We will need to look into how certain data can be used to reach our goal considering there is a lot of data. Some limitations we might face is how we will limit our data(whether that be to a certain country or continent) and if we want to cross-examine data from other sources, how will we do that efficiently and reasonably? We need to understand our focus group even more in order to better sift through data and better reach our intended audience. Another limitation will be how accurate the data is or if all seismic sensors record even data.
+### Limitations & Challenges
+What challenges or limitations might you need to address with your project idea more broadly? Briefly discuss. (at least 150 words)
+
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
@@ -106,7 +107,8 @@ Describe why you included the table and what information it reveals
 
 This chart was chosen as a means to let people truly see where earthquakes of measurable scale occur.
 
-```{r echo=FALSE, message=FALSE, code= readLines("Nikola_Viz.R")}
+```{r, echo = FALSE, code = readLines("Nikola_Viz.R")}
+world_plot
 ```
 
 ### Chart 2
@@ -115,8 +117,8 @@ Include a chart
 
 > Describe why you chose this chart and what information it reveals
 
-A bar chart was used to illustrate the top eight countries with the highest accurate predicted intensities. A bar chart is a useful tool for comparing numbers across multiple categories, in this example, countries. We can simply examine and compare the average accuracy numbers for each country by using a bar chart. The average accuracy is shown by the height of each bar, allowing us to readily identify the countries with the highest accuracy. From this graph, the countries are ranked based on their average accuracy values, with Tajikistan having the highest average accuracy and Mexico having the lowest among the top 8 countries. In addition, the length of each bar allows us to compare the average accuracy values between countries. We can observe the variations in accuracy levels and identify the countries with relatively higher or lower accuracy.
-```{r, echo = FALSE, code = readLines("Bonie's Chart.R")}
+```{r, echo = FALSE, code = readLines("Christine-chart.R")}
+world_plot
 ```
 
 ### Chart 3
@@ -125,5 +127,5 @@ Include a chart
 
 > Describe why you chose this chart and what information it reveals
 
-```{r, echo = FALSE, code = readLines("Christine-chart.R")}
+```{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```

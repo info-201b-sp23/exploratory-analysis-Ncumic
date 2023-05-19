@@ -16,11 +16,15 @@ Earthquake_plot <- ggplot(data = world_data_shape) +
                    group = group)) +
   geom_point(data = earthquake_data_modified,
              aes(x = longitude, y = latitude,
-             size = magnitude, color = "Red"),
+             size = magnitude),
+             color = "Red",
              #will make color match to magnitude size/alert level maybe? somehow
              # might change shape later
              shape = 21
-  )
+  ) + labs(title = "Earthquake locations & respective magnitudes",
+           x = "Longitude",
+           y = "Latitude"
+)
 Earthquake_plot
 
 
