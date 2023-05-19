@@ -103,20 +103,18 @@ Describe why you included the table and what information it reveals
 
 ### Chart 1
 
-Include a chart
+> Describe why you chose this chart and what information it reveals
 
-Describe why you chose this chart and what information it reveals
-
-Here's an example of how to run an R script inside an RMarkdown file:
 
 ```{r, echo = FALSE, code = readLines("Nikola_Viz.R")}
+world_plot
 ```
 
 ### Chart 2
 
 Include a chart
 
-Describe why you chose this chart and what information it reveals
+> Describe why you chose this chart and what information it reveals
 
 ```{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
@@ -125,7 +123,7 @@ Describe why you chose this chart and what information it reveals
 
 Include a chart
 
-Describe why you chose this chart and what information it reveals
+> Describe why you chose this chart and what information it reveals
 
 ```{r, echo = FALSE, code = readLines("chart1_example.R")}
 ```
