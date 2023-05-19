@@ -21,7 +21,8 @@ continent_counts
 
 ##2) What year had the most earthquakes?
 
-earthquake_data_modified$year <- as.integer(format(earthquake_data_modified$date, "%Y"))
+#this line right here doesn't work and stops everything else
+# earthquake_data_modified$year <- as.integer(format(earthquake_data_modified$date, "%Y"))
 
 year_counts <- table(earthquake_data_modified$year)
 

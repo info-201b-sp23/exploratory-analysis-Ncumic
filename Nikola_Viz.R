@@ -21,6 +21,7 @@ world_plot <- ggplot(data = world_data_shape) +
              # might change shape later
              shape = 21
   )
+world_plot
 
 
 
