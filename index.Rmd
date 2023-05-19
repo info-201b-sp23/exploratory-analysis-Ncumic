@@ -20,12 +20,10 @@ Our main question is to determine the continent with the highest number of earth
 
 ### Keywords
 
-3-5 keywords that summarize your project.
-(e.g., "Keywords: human physiology; bicycle exercise; Gen Z; times-series data")
+Earthquake, Seismic, Informational, Accuracy, Visualization
 
 ### Introduction
 
-#### Briefly introduce your project.  Include 3-5 research questions. What motivates the questions? Why are they important? (at least 200 words)
 
 A lot of data revolving around earthquakes is confined to datasets and not very accessible to people unfamiliar to data traversal. Our objective is to better visualize this data for people that wish to stay informed, but can’t take the time to sift through data about earthquakes. This also helps people understand the actual frequencies and magnitude of earthquakes, and why earthquakes are not something to be as feared as they are depicted in movies and on the news. This data also has a unique column that goes over what citizens of a certain area felt like the magnitude of the earthquake was, this information if taken into account could also lower peoples worries of earthquakes and keep them more informed on earthquake impacts. Another good thing for people to understand about earthquakes are other variables that happen alongside the event and how they effect the surrounding environment, since many people don’t understand the aftermath/effects earthquakes bring(that is why we are also focusing on how many of these earthquakes cause tsunamis, or damage building around them). We intend to put a more clear understanding of these natural phenomena in order to better reassure people and to inform.
 
@@ -114,10 +112,9 @@ The summary information encompasses five important facets of earthquake analysis
 
 ### Table
 
-Include a table of aggregate information
 ```{r echo=FALSE, message=FALSE, code=readLines("Table.R"), paged.print=TRUE}
 ```
-
+The reason we included this table was to give a clearer understanding to the people reading this on the information we used. We grouped by magnitude because it was a value in the data set that was always available and one understood by many people.
 
 ### Chart 1
 
