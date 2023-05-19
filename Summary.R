@@ -35,9 +35,10 @@ most_earthquakes_year <- earthquakes_by_year %>%
   pull(Year)
 
 ##3) Number of earthquakes over the years(trend)
+earthquake_data_modified$date <- as.Date(earthquake_data_modified$date, format = "%Y-%m-%d")
+earthquake_data_modified$Year <- as.integer(format(earthquake_data_modified$date, "%Y"))
 
 trend_data <- earthquake_data_modified %>%
-  mutate(Year = as.integer(format(as.Date(date), "%Y"))) %>%
   group_by(Year) %>%
   summarise(earthquakes = n())
 
@@ -45,6 +46,7 @@ ggplot(data = trend_data, aes(x = Year, y = earthquakes)) +
   geom_line() +
   geom_point() +
   labs(x = "Year", y = "Number of Earthquakes", title = "Trend of Earthquakes over the Years")
+
 
 ##4) Country with the most intense magnitudes of earthquakes
 
