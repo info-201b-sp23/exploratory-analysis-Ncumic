@@ -3,9 +3,8 @@ title: "Exploratory Analysis"
 output: html_document
 ---
 
-## Project title
+## Shaking Out The Facts
 
-Give your project a concise, interesting title that summarizes the entirety of your project
 
 ### Authors
 
@@ -90,6 +89,7 @@ Policymakers can utilize the information about earthquake patterns and intensiti
 
 ### Limitations & Challenges - Bonie
 Some challenges we might need to address when diving deeper into our project idea is what information is truly helpful for people to know, what information is best to display and focus on if our main goal is to inform, and dispel concerns. Our challenges will mostly focus around the way we decide what data is important and what is not(a lot like the book we are reading for this class). We will need to look into how certain data can be used to reach our goal considering there is a lot of data. Some limitations we might face is how we will limit our data(whether that be to a certain country or continent) and if we want to cross-examine data from other sources, how will we do that efficiently and reasonably? We need to understand our focus group even more in order to better sift through data and better reach our intended audience. Another limitation will be how accurate the data is or if all seismic sensors record even data.
+
 ### Summary Information
 
 Write a summary paragraph of findings that includes the 5 values calculated from your summary information R script
@@ -119,7 +119,6 @@ A bar chart was used to illustrate the top eight countries with the highest accu
 
 ### Chart 3
 
-Include a chart
 
 > Describe why you chose this chart and what information it reveals
 
