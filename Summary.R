@@ -12,7 +12,7 @@ earthquake_data_modified <- select(earthquake_data, -c("title","net", "nst", "dm
 
 ##BrianChiang
 ##SUMMARY VALUES TO CALCULATE:
-##1) Continent with most earthquakes? 
+##1) Which Continent with most earthquakes?
 continent_counts <- earthquake_data_modified %>%
   count(continent)
 
