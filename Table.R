@@ -2,6 +2,8 @@ library("dplyr")
 library("tidyr")
 library("lubridate")
 library("ggplot2")
+library('rmarkdown')
+library('knitr')
 
 earthquake_data <- read.csv('https://raw.githubusercontent.com/info-201b-sp23/exploratory-analysis-Ncumic/main/earthquake_data.csv')
 
@@ -20,6 +22,4 @@ earthquake_data_modified <- earthquake_data_modified[earthquake_data_modified$co
                                                        earthquake_data_modified$location != "", , drop = FALSE]
 
 
-
-
-
+paged_table(earthquake_data_modified)
