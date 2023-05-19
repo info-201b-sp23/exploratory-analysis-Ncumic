@@ -42,7 +42,7 @@ A lot of data revolving around earthquakes is confined to datasets and not very 
 
 Describe your topic and related work in this space. You must include 3 citations to related work (URLs to similar work, high quality articles from the popular press, research papers, etc. ) Please use a standard citation style of your choice. (at least 200 words)
 
-### The Dataset - NIKOLA
+### The Dataset - Nikola
 
 > Where did you find the data? Please include a link to the data source
 
