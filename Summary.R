@@ -68,3 +68,24 @@ CountryAccuracy <- earthquake_data_Accuracy %>%
 
 CountryMostAccurate <- CountryAccuracy %>% head(1) %>% pull(country)
 
+#list 
+summary_info <- list()
+summary_info$continent_counts <- earthquake_data_modified %>%
+  count(continent)
+
+summary_info$most_earthquakes_year <- earthquakes_by_year %>%
+  filter(Count == max(Count)) %>%
+  pull(Year)
+
+summary_info$trend_data <- earthquake_data_modified %>%
+  group_by(Year) %>%
+  summarise(earthquakes = n())
+
+summary_info$country_max_magnitude <- earthquake_data_modified %>%
+  group_by(country) %>%
+  summarise(max_magnitude = max(magnitude, na.rm = TRUE)) %>%
+  arrange(max_magnitude) %>% 
+  last()
+
+summary_info$CountryMostAccurate <- CountryAccuracy %>% head(1) %>% pull(country)
+
