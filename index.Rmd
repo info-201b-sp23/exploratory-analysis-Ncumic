@@ -9,11 +9,11 @@ Give your project a concise, interesting title that summarizes the entirety of y
 
 ### Authors
 
-Names of your team members: Brian Chiang
+Names of your team members: Brian Chiang, Nikola Cumic
 
 ### Date
 
-Winter 2022
+Spring 2023
 
 ### Abstract - Brian
 
@@ -105,6 +105,7 @@ Describe why you included the table and what information it reveals
 
 > Describe why you chose this chart and what information it reveals
 
+This chart was chosen as a means to let people truly see where earthquakes of measurable scale occur.
 
 ```{r, echo = FALSE, code = readLines("Nikola_Viz.R")}
 world_plot
@@ -116,7 +117,8 @@ Include a chart
 
 > Describe why you chose this chart and what information it reveals
 
-```{r, echo = FALSE, code = readLines("chart1_example.R")}
+```{r, echo = FALSE, code = readLines("Christine-chart.R")}
+world_plot
 ```
 
 ### Chart 3

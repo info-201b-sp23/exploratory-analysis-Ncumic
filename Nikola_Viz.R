@@ -10,7 +10,7 @@ world_data_shape <- map_data("world")
 
 world_earthquake_table <- left_join(world_data_shape, earthquake_data_modified, by = c("long" = "longitude", "lat" = "latitude"))
 
-world_plot <- ggplot(data = world_data_shape) +
+Earthquake_plot <- ggplot(data = world_data_shape) +
   geom_polygon(aes(x = long,
                    y = lat,
                    group = group)) +
@@ -21,7 +21,7 @@ world_plot <- ggplot(data = world_data_shape) +
              # might change shape later
              shape = 21
   )
-world_plot
+Earthquake_plot
 
 
 
