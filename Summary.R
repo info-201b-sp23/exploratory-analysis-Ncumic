@@ -8,7 +8,6 @@ library("ggplot2")
 # UPDATED TABLE CODE
 
 earthquake_data <- read.csv('https://raw.githubusercontent.com/info-201b-sp23/exploratory-analysis-Ncumic/main/earthquake_data.csv')
-
 earthquake_data_modified <- select(earthquake_data, -c("title","net", "nst", "dmin", "gap", "magType", "depth"))
 
 ##BrianChiang
