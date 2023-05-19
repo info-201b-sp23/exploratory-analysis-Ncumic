@@ -22,7 +22,7 @@ continent_counts
 ##2) What year had the most earthquakes?
 
 #this line right here doesn't work and stops everything else, it might still checking
-earthquake_data_modified$year <- as.integer(format(earthquake_data_modified$date, "%Y"))
+# earthquake_data_modified$year <- as.integer(format(earthquake_data_modified$date, "%Y"))
 
 year_counts <- table(earthquake_data_modified$year)
 
@@ -61,4 +61,3 @@ CountryAccuracy <- earthquake_data_Accuracy %>%
 
 CountryMostAccurate <- CountryAccuracy %>% head(1) %>% pull(country)
 
-write.csv(CountryAccuracy, file = 'CountryAccuracy.csv')

@@ -1,7 +1,7 @@
 #Bonie's visual on Top 8-10 Countries that have the most accurate estimated of intensities - Bar-Chart
 
 #Set this working directory to where you put the Summary.R is in order to generate the plot
-setwd("C:/Users/bonie/Desktop/Bonie/INFO201/exploratory-analysis-Ncumic")
+# setwd("C:/Users/bonie/Desktop/Bonie/INFO201/exploratory-analysis-Ncumic")
 source('Summary.R')
 library(ggplot2)
 
