@@ -17,8 +17,7 @@ earthquake_data_modified <- earthquake_data_modified %>%
 
 earthquake_data_modified <- earthquake_data_modified[earthquake_data_modified$country != "" & earthquake_data_modified$continent != "" & earthquake_data_modified$alert != "", , drop = FALSE]
 # Create the summary table
-source("/Users/chenhaochiang/Desktop/Info201/exploratory-analysis-Ncumic/Summary.R")
 
-library(dplyr)
+
 
 
