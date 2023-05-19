@@ -25,7 +25,11 @@ world_plot <- ggplot(data = world_shape) +
   geom_point(data = filter(eq_df, tsunami == 1),
              aes(x = longitude,
                  y = latitude),
-             color = "red")
+             color = "red") +
+  labs(title = "Earthquakes That Caused Tsunami's",
+       x = "Longitude",
+       y = "Latitude"
+  )
 world_plot
 
 #world_plot <- ggplot(data = world_shape) +
