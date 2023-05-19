@@ -20,22 +20,20 @@ continent_counts
 
 ##2) What year had the most earthquakes?
 
-#this line right here doesn't work and stops everything else, it might still checking
-# earthquake_data_modified$year <- as.integer(format(earthquake_data_modified$date, "%Y"))
+earthquake_data_modified$Year <- as.integer(format(as.POSIXct(earthquake_data_modified$date, format = "%d-%m-%Y %H:%M"), "%Y"))
 
-earthquake_data_modified$Year <- as.integer(format(as.Date(earthquake_data_modified$date), "%Y"))
 
 earthquakes_by_year <- earthquake_data_modified %>%
   group_by(Year) %>%
   summarise(Count = n()) %>%
   arrange(Count)
-  
+
 most_earthquakes_year <- earthquakes_by_year %>%
   filter(Count == max(Count)) %>%
   pull(Year)
 
 ##3) Number of earthquakes over the years(trend)
-earthquake_data_modified$date <- as.Date(earthquake_data_modified$date, format = "%Y-%m-%d")
+earthquake_data_modified$date <- as.Date(earthquake_data_modified$date, format = "%d-%m-%Y")
 earthquake_data_modified$Year <- as.integer(format(earthquake_data_modified$date, "%Y"))
 
 trend_data <- earthquake_data_modified %>%
@@ -46,7 +44,6 @@ ggplot(data = trend_data, aes(x = Year, y = earthquakes)) +
   geom_line() +
   geom_point() +
   labs(x = "Year", y = "Number of Earthquakes", title = "Trend of Earthquakes over the Years")
-
 
 ##4) Country with the most intense magnitudes of earthquakes
 
